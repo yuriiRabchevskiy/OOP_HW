@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <form class="newUser">
+            <label for="name">User Name: <input id="name" type="text" name="name" value="Yura"></label>
+            <label>Sex:
+                <label for="male">Male<input id="male" type="radio" name="sex" checked></label>
+            <label for="female">Female<input id="female" type="radio" name="sex"></label>
+            </label>
+            <label for="birth">User Birth Day: <input id="birth" type="date" name="birth"></label>
+            <label for="address">User Address: <input id="address" type="text" name="address" placeholder="Your Adress"></label>
+            <label for="phone">User phone<input id="phone" type="tel" name="phone"></label>
+            <label for="email">User email<input id="email" type="email" name="email" placeholder="user@gmail.com"></label>
+            <button type="submit" onclick="addUser(event)">Add User</button>
+        </form>
+
+        <div class="table-container">
+
+        </div>
+
+    </div>
+
+    <script src="user.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

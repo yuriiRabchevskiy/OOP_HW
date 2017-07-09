@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newUser {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 24px;
+    box-sizing: content-box;
+    border: 2px solid cornflowerblue;
+    background: cornflowerblue;
+}
+
+.table-container {
+    width: 40%;
+    height: 300px;
+    box-sizing: content-box;
+    padding: 48px 24px;
+    background: cornflowerblue;
+    border: 2px solid black;
+    overflow: auto;
+}
+
+.table-container table {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.table-container table .th-cell {
+    background: gray;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.table-container table tbody {
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow-y: auto;
+    vertical-align: top;
+}
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
