@@ -47,8 +47,6 @@ body {
 }
 .table-container table tbody {
     width: 100%;
-    height: calc(100% - 30px);
-    overflow-y: auto;
     vertical-align: top;
 }
 .visible {
