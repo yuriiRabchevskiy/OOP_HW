@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="label-wrap">
+            <label class="h-label">Your money <input type="number" name="userMoney" id="userMoney" value="100"></label>
+            <label class="h-label">Slot Mashine <input type="number" name="numSlot" id="numSlot" value="0" min="1" max="15"></label>
+        </div>
+
+
+        <button onclick="pushMoney()">Push</button>
+
+    </div>
+
+    <div class="content">
+        <div id="totalMoney">
+            <span class="total-money">Total: <span id="total"></span></span>
+        </div>
+
+        <ul id="mashines">
+
+        </ul>
+    </div>
+
+
+
+    <script src="MashineView.js"></script>
+    <script src="slotmashine.js"></script>
+    <script src="casino.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

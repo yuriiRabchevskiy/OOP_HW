@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 9;
+}
+
+.check {
+    display: none;
+    width: 300px;
+    min-height: 300px;
+    margin: auto;
+    z-index: 10;
+    position: fixed;
+    top: 50px;
+    left: calc(50% - 150px);
+}
+
+.check-wrap {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: 0;
+    padding: 0px;
+    background: white;
+    color: black;
+    font-size: 20px;
+}
+
+.number-bill,
+.bill-day {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.bill-day {
+    text-align: left;
+}
+
+.bill-line {
+    margin: 8px 0px;
+    border-color: black;
+}
+
+.info {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: blue;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.total-bill,
+.b-item-name {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.visible {
+    display: block;
+}
+
+.product {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 1px solid red;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product input {
+    width: 50%;
+    margin: 12px;
+}
+
+.product input[type="text"] {
+    background: white;
+    opacity: 0.4;
+    border: 0;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    color: Black;
+}
+
+.product input[type="number"] {
+    border: 1px solid red;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 20px;
+    text-indent: 50%;
+    background: white;
+    opacity: 0.6;
+}
+
+.btn {
+    width: 300px;
+    height: 100px;
+    margin: 0px auto;
+    clear: both;
+}
+
+.btn button {
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    color: #fff;
+    padding: 0px;
+    border: 0px;
+    box-shadow: -5px 10px 21px black;
+    border-radius: 10px;
+}
+
+.bread {
+    background-image: url('./img/bread.jpg');
+}
+
+.milk {
+    background-image: url('./img/milk.jpg');
+}
+
+.cheese {
+    background-image: url('./img/cheese.jpg');
+}
+
+.egg {
+    background-image: url('./img/egg.jpg');
+}
+
+.potato {
+    background-image: url('./img/potato.jpg');
+}
+
+.chips {
+    background-image: url('./img/chips.jpg');
+}
+
+.water {
+    background-image: url('./img/water.jpg');
+}
+
+.meat {
+    background-image: url('./img/meat.jpg');
+}
+
+.onion {
+    background-image: url('./img/onion.jpg');
+}
+
+.tomato {
+    background-image: url('./img/tomato.jpg');
+}
+
+.cucumber {
+    background-image: url('./img/cocumber.jpg');
+}
+
+.oil {
+    background-image: url('./img/oil.jpg');
+}
+
+.sauce {
+    background-image: url('./img/sauce.png');
+}
+
+.cookies {
+    background-image: url('./img/cookies.jpg');
+}
+
+.sweets {
+    background-image: url('./img/sweet.jpg');
+}

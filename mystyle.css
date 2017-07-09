@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 24px;
+    color: greenyellow;
+}
+
+.list {
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.list li {
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    text-align: center;
+}
+li a {
+    color: wheat;
+    text-decoration: none;
+    cursor: pointer;
+}
+li a:hover {
+    color: red;
+}

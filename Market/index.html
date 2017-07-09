@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="product-wrapper">
+        <div id="product">
+            <form>
+                <div class="product bread">
+                    <input type="text" name="bread" value="bread" readonly>
+                    <input type="number" value="0" min="0" id='bread'>
+                    <br />
+                    <span class="info">500g / $7.99</span>
+                </div>
+                <div class="product milk">
+                    <input type="text" name="milk" value="milk" readonly>
+                    <input type="number" value="0" min="0" id="milk">
+                    <br />
+                    <span class="info">900g / $14.99</span>
+                </div>
+                <div class="product cheese">
+                    <input type="text" name="cheese" value="cheese" readonly>
+                    <input type="number" value="0" min="0" id="cheese">
+                    <br />
+                    <span class="info">1000g / $149.99</span>
+                </div>
+                <div class="product egg">
+                    <input type="text" name="egg" value="egg" readonly>
+                    <input type="number" value="0" min="0" id="egg">
+                    <br />
+                    <span class="info">50g/el / $0.99</span>
+                </div>
+                <div class="product potato">
+                    <input type="text" name="potato" value="potato" readonly>
+                    <input type="number" value="0" min="0" id="potato">
+                    <br />
+                    <span class="info">1000g / $8.99</span>
+                </div>
+                <div class="product chips">
+                    <input type="text" name="chips" value="chips" readonly>
+                    <input type="number" value="0" min="0" id="chips">
+                    <br />
+                    <span class="info">200g / $3.99</span>
+                </div>
+                <div class="product water">
+                    <input type="text" name="water" value="water" readonly>
+                    <input type="number" value="0" min="0" id="water">
+                    <br />
+                    <span class="info">500g / $2.99</span>
+                </div>
+                <div class="product meat">
+                    <input type="text" name="meat" value="meat" readonly>
+                    <input type="number" value="0" min="0" id="meat">
+                    <br />
+                    <span class="info">1000g / $99.99</span>
+                </div>
+                <div class="product onion">
+                    <input type="text" name="onion" value="onion" readonly>
+                    <input type="number" value="0" min="0" id="onion">
+                    <br />
+                    <span class="info">1000g / $5.99</span>
+                </div>
+                <div class="product tomato">
+                    <input type="text" name="tomato" value="tomato" readonly>
+                    <input type="number" value="0" min="0" id="tomato">
+                    <br />
+                    <span class="info">1000g / $24.99</span>
+                </div>
+                <div class="product cucumber">
+                    <input type="text" name="cucumber" value="cucumber" readonly>
+                    <input type="number" value="0" min="0" id="cucumber">
+                    <br />
+                    <span class="info">1000g / $10.99</span>
+                </div>
+                <div class="product oil">
+                    <input type="text" name="oil" value="oil" readonly>
+                    <input type="number" value="0" min="0" id="oil">
+                    <br />
+                    <span class="info">500g / $32.99</span>
+                </div>
+                <div class="product sauce">
+                    <input type="text" name="sauce" value="sauce" readonly>
+                    <input type="number" value="0" min="0" id="sauce">
+                    <br />
+                    <span class="info">200g / $22.99</span>
+                </div>
+                <div class="product cookies">
+                    <input type="text" name="cookies" value="cookies" readonly>
+                    <input type="number" value="0" min="0" id="cookies">
+                    <br />
+                    <span class="info">1000g / $64.99</span>
+                </div>
+                <div class="product sweets">
+                    <input type="text" name="sweets" value="sweets" readonly>
+                    <input type="number" value="0" min="0" id="sweets">
+                    <br />
+                    <span class="info">1000g / $124.5</span>
+                </div>
+                <div class="btn">
+                    <button type="button" onclick="getBill()">By</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+    <div class="check">
+        <div class="check-wrap">
+            <button class="close" onclick="closeCheck()">X</button>
+            <span class="number-bill"></span>
+            <span class="bill-day"></span>
+            <hr class="bill-line" />
+            <div class="bill-wrap"></div>
+            <hr class="bill-line" />
+            <span class="total-bill"><span>Total: </span><span class="bTotal"></span></span>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeCheck()"></div>
+
+
+    <template id="bill">
+        <div class="bill-item">
+            <div class="product-list">
+                <div class="product-item">
+                    <span class="b-item-name"><span>{name} ( {number} / {totalWeight}g ) :----------</span><span>{totalPrice}</span></span>
+                    <span class="b-item-info">${price} / {weight}g</span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="./product.js"></script>
+    <script src="./shop.js"></script>
+    <script src="./bill.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
